@@ -5,7 +5,6 @@ COPY package.json .
 RUN npm install
 COPY . .
 RUN npm run build
-# /usr/app/build
 
 FROM nginx
 EXPOSE 80
